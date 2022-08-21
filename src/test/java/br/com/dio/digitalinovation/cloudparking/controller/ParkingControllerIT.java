@@ -1,4 +1,4 @@
-package br.com.dio.digitalinovation.cloudparking;
+package br.com.dio.digitalinovation.cloudparking.controller;
 
 import org.hamcrest.Matchers;
 import org.junit.jupiter.api.BeforeEach;
@@ -32,7 +32,7 @@ public class ParkingControllerIT {
 		.when()
 		.get("/parking")
 		.then().statusCode(200)
-		.body("license[0]",Matchers.equalTo("DMS-111"));
+		.body("license[0]",Matchers.equalTo("MDS-111"));
 		
 	}
 	
